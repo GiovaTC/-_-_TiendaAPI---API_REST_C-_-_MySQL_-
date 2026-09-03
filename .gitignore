@@ -1,0 +1,41 @@
+## Visual Studio
+
+.vs/
+.vscode/
+
+## Build
+
+bin/
+obj/
+
+## User files
+
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## ASP.NET
+
+appsettings.Development.json
+
+## Logs
+
+*.log
+
+## NuGet
+
+packages/
+
+## Generated files
+
+TestResults/
+
+## Rider
+
+.idea/
+
+## OS
+
+.DS_Store
+Thumbs.db
