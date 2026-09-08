@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Formats.Asn1;
 using TiendaAPI.Data;
 using TiendaAPI.Modelos;
 
@@ -75,5 +76,20 @@ namespace TiendaAPI.Controllers
                 pedido);
         }
 
-    }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeletePedido(int id)
+        {
+            var pedido = await _context.Pedidos
+                .FindAsync(id);
+
+            if (pedido == null)
+                return NotFound();
+
+            _context.Pedidos.Remove(pedido);
+            
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+    }   
 }
