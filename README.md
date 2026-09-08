@@ -1,5 +1,7 @@
 # 🛒 TiendaAPI --- API REST C# + MySQL
 
+<img width="1365" height="765" alt="image" src="https://github.com/user-attachments/assets/d254493f-b9b8-48b1-b207-677556024d31" />   
+
 <img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/374aa37c-9b58-4946-91cf-1dfa2078c401" />  
 
 <img width="1363" height="767" alt="image" src="https://github.com/user-attachments/assets/93f27596-ea3e-4b1d-a69c-2a110cd41d1d" />
@@ -9,8 +11,6 @@
 <img width="1362" height="767" alt="image" src="https://github.com/user-attachments/assets/fb5718f8-f135-4a1c-8294-8e133f20ffd7" /> 
 
 <img width="2548" height="1078" alt="image" src="https://github.com/user-attachments/assets/0b846572-f128-4142-bfd6-37b9b11d9fae" />
-
-<img width="1365" height="765" alt="image" src="https://github.com/user-attachments/assets/d254493f-b9b8-48b1-b207-677556024d31" />
 
 ```
 
