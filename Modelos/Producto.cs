@@ -4,6 +4,8 @@ namespace TiendaAPI.Modelos
 {
     public class Producto
     {
+        public int Id { get; set; } 
+
         [Required]
         [StringLength(150)]
         public string Nombre { get; set; } = string.Empty;
