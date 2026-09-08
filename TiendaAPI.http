@@ -1,6 +1,192 @@
-@TiendaAPI_HostAddress = http://localhost:5109
+@TiendaAPI_HostAddress = https://localhost:7110
 
-GET {{TiendaAPI_HostAddress}}/weatherforecast/
+### =====================================================
+### CLIENTES
+### =====================================================
+
+### Obtener todos los clientes
+GET {{TiendaAPI_HostAddress}}/api/clientes
 Accept: application/json
 
 ###
+
+### Obtener cliente por ID
+GET {{TiendaAPI_HostAddress}}/api/clientes/1
+Accept: application/json
+
+###
+
+### Crear cliente
+POST {{TiendaAPI_HostAddress}}/api/clientes
+Content-Type: application/json
+
+{
+  "nombre": "Pedro Martínez",
+  "correo": "pedro@gmail.com",
+  "telefono": "3004444444"
+}
+
+###
+
+### Actualizar cliente
+PUT {{TiendaAPI_HostAddress}}/api/clientes/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nombre": "Juan Pérez Actualizado",
+  "correo": "juan.actualizado@gmail.com",
+  "telefono": "3009999999"
+}
+
+###
+
+### Eliminar cliente
+DELETE {{TiendaAPI_HostAddress}}/api/clientes/3
+
+### =====================================================
+### PEDIDOS
+### =====================================================
+
+### Obtener todos los pedidos
+GET {{TiendaAPI_HostAddress}}/api/pedidos
+Accept: application/json
+
+###
+
+### Obtener pedido por ID
+GET {{TiendaAPI_HostAddress}}/api/pedidos/1
+Accept: application/json
+
+###
+
+### Crear pedido
+POST {{TiendaAPI_HostAddress}}/api/pedidos
+Content-Type: application/json
+
+{
+  "clienteId": 1
+}
+
+###
+
+### Eliminar pedido
+DELETE {{TiendaAPI_HostAddress}}/api/pedidos/3
+
+### =====================================================
+### PRODUCTOS
+### =====================================================
+
+### Obtener todos los productos
+GET {{TiendaAPI_HostAddress}}/api/productos
+Accept: application/json
+
+###
+
+### Obtener producto por ID
+GET {{TiendaAPI_HostAddress}}/api/productos/1
+Accept: application/json
+
+###
+
+### Crear producto
+POST {{TiendaAPI_HostAddress}}/api/productos
+Content-Type: application/json
+
+{
+  "nombre": "Webcam Logitech",
+  "precio": 180000,
+  "stock": 12,
+  "categoriaId": 2
+}
+
+###
+
+### Actualizar producto
+PUT {{TiendaAPI_HostAddress}}/api/productos/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nombre": "Laptop Lenovo ThinkPad",
+  "precio": 2800000,
+  "stock": 7,
+  "categoriaId": 1
+}
+
+###
+
+### Eliminar producto
+DELETE {{TiendaAPI_HostAddress}}/api/productos/4
+
+### =====================================================
+### CATEGORIAS
+### =====================================================
+
+### Obtener todas las categorías
+GET {{TiendaAPI_HostAddress}}/api/categorias
+Accept: application/json
+
+###
+
+### Obtener categoría por ID
+GET {{TiendaAPI_HostAddress}}/api/categorias/1
+Accept: application/json
+
+###
+
+### Crear categoría
+POST {{TiendaAPI_HostAddress}}/api/categorias
+Content-Type: application/json
+
+{
+  "nombre": "Impresoras"
+}
+
+###
+
+### Actualizar categoría
+PUT {{TiendaAPI_HostAddress}}/api/categorias/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nombre": "Computadores y Laptops"
+}
+
+###
+
+### Eliminar categoría
+DELETE {{TiendaAPI_HostAddress}}/api/categorias/3
+
+### =====================================================
+### DETALLES DE PEDIDO
+### =====================================================
+
+### Obtener todos los detalles
+GET {{TiendaAPI_HostAddress}}/api/detallespedido
+Accept: application/json
+
+###
+
+### Obtener detalle por ID
+GET {{TiendaAPI_HostAddress}}/api/detallespedido/1
+Accept: application/json
+
+###
+
+### Crear detalle de pedido
+POST {{TiendaAPI_HostAddress}}/api/detallespedido
+Content-Type: application/json
+
+{
+  "cantidad": 2,
+  "precio": 85000,
+  "pedidoId": 1,
+  "productoId": 2
+}
+
+###
+
+### Eliminar detalle
+DELETE {{TiendaAPI_HostAddress}}/api/detallespedido/1 
