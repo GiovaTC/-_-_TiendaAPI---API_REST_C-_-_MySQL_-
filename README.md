@@ -10,6 +10,8 @@
 
 <img width="2548" height="1078" alt="image" src="https://github.com/user-attachments/assets/0b846572-f128-4142-bfd6-37b9b11d9fae" />
 
+<img width="1365" height="765" alt="image" src="https://github.com/user-attachments/assets/d254493f-b9b8-48b1-b207-677556024d31" />
+
 ```
 
 API REST desarrollada con **Visual Studio 2026, C#, ASP.NET Core Web
