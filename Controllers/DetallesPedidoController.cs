@@ -84,6 +84,22 @@ namespace TiendaAPI.Controllers
                 detalle);
         }
 
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> DeleteDetalle(int id)
+        {
+            var detalle = await _context.DetallesPedido
+                .FindAsync(id);
 
+            if (detalle == null)
+            {
+                return NotFound();
+            }
+
+            _context.DetallesPedido.Remove(detalle);
+            
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
     }
-}
+}   
